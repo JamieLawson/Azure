@@ -107,14 +107,14 @@ variable "foundry_user_principal_id" {
   }
 }
 
-variable "kimi_k2_6_capacity" {
-  description = "Global Standard deployment capacity for Kimi-K2.6, in thousands of tokens per minute."
+variable "mistral_small_2503_capacity" {
+  description = "Global Standard deployment capacity for mistral-small-2503, in thousands of tokens per minute."
   type        = number
   default     = 10
 
   validation {
-    condition     = var.kimi_k2_6_capacity > 0 && floor(var.kimi_k2_6_capacity) == var.kimi_k2_6_capacity
-    error_message = "kimi_k2_6_capacity must be a positive whole number."
+    condition     = var.mistral_small_2503_capacity > 0 && floor(var.mistral_small_2503_capacity) == var.mistral_small_2503_capacity
+    error_message = "mistral_small_2503_capacity must be a positive whole number."
   }
 }
 
