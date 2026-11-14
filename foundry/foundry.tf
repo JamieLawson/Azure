@@ -14,15 +14,15 @@ module "foundry" {
   default_project          = module.naming.names.account_project.name
   enable_telemetry         = var.enable_telemetry
   cognitive_deployments = {
-    kimi_k2_6 = {
-      name = "Kimi-K2.6"
+    mistral_small_2503 = {
+      name = "mistral-small-2503"
       model = {
-        format  = "MoonshotAI"
-        name    = "Kimi-K2.6"
-        version = "2026-04-20"
+        format  = "Mistral AI"
+        name    = "mistral-small-2503"
+        version = "1"
       }
       scale = {
-        capacity = var.kimi_k2_6_capacity
+        capacity = var.mistral_small_2503_capacity
         type     = "GlobalStandard"
       }
     }
